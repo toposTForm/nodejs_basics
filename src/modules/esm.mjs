@@ -6,8 +6,8 @@ import { release, version} from 'os';
 import { createServer as createServerHttp } from 'http';
 //require('./files/c');
 import * as c from './files/c.cjs';
-import * as a from './files/a.json' with {type: 'json'};
-import * as b from './files/b.json' with {type: 'json'};
+import  a from './files/a.json'  assert {type: 'json'};
+import  b from './files/b.json'  assert {type: 'json'};
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
@@ -17,9 +17,12 @@ let unknownObject;
 
 if (random > 0.5) {
     // unknownObject = require('./files/a.json');
+    // unknownObject = await import('./files/a.json', {assert: {type: 'json'}});
     unknownObject = a;
+    
 } else {
     // unknownObject = require('./files/b.json');
+    // unknownObject = await import('./files/b.json', {assert: {type: 'json'}});
     unknownObject = b;
 }
 
