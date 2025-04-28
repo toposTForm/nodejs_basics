@@ -10,7 +10,6 @@ const copy = async () => {
             let papka = 'src/fs/files_copy';
             function filesContentCallback(err, data) {
                 if (err) throw err;
-                let bla = data;
             }
             let filesContent = await readdir('src/fs/files', filesContentCallback);
             let papkaCreate = await mkdir(papka, {recursive: true});
