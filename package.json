@@ -1,0 +1,24 @@
+{
+  "name": "filemanager",
+  "version": "1.0.0",
+  "description": "rsSchool task",
+  "main": "server.js",
+  "scripts": {
+    "test": "fmanager -test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toposTForm/nodejs_basics.git"
+  },
+  "keywords": [
+    "fs",
+    "filemanager",
+    "task"
+  ],
+  "author": "toposform",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toposTForm/nodejs_basics/issues"
+  },
+  "homepage": "https://github.com/toposTForm/nodejs_basics#readme"
+}
